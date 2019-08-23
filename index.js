@@ -1,5 +1,5 @@
-const launcher = require('./lib/karma-cbt-launcher');
-const reporter = require('./lib/reporter');
+const launcher = require('./src/karma-cbt-launcher');
+const reporter = require('./src/reporter');
 
 module.exports = { 
     'reporter:CrossBrowserTesting': ['type', reporter],

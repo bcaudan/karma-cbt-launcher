@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var babel = require('gulp-babel');
 var eslint = require('gulp-eslint');
 
 var src = [
@@ -13,8 +12,4 @@ gulp.task('lint', function() {
         .pipe(eslint.failAfterError());
 });
 
-gulp.task('default', ['lint'], function() {
-    return gulp.src(src)
-        .pipe(babel())
-        .pipe(gulp.dest('lib'));
-});
+gulp.task('default', ['lint']);
